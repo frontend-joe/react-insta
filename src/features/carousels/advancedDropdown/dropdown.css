@@ -1,0 +1,58 @@
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 16rem;
+  background: #212025;
+  border-radius: 0.25rem;
+  transition: height 0.3s;
+}
+
+.menu-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 1rem;
+  color: #f9f9f9;
+}
+
+.menu-button:hover {
+  background: #2c2b31;
+}
+
+.menu-button-icon {
+  flex: 0 0 2.25rem;
+  display: grid;
+  place-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  background: #3e3c46;
+  color: #a39dac;
+  font-size: 16px;
+}
+
+.menu-button-text {
+  margin-right: auto;
+  font-size: 1rem;
+}
+
+.menu-main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: all 0.3s;
+}
+
+.menu-main.open {
+  transform: translateX(-100%);
+}
+
+.menu-sub {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+}
